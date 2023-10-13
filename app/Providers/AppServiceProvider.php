@@ -43,7 +43,7 @@ class AppServiceProvider extends ServiceProvider
                 //
             }
 
-           $all_menus = Menu::where('is_static', INACTIVE)->with('submenus')->latest()->get();
+          $all_menus = Menu::where('is_static', INACTIVE)->with('submenus')->latest()->get();
             $allsettings = allsetting();
             view()->share(['all_menus' => $all_menus, 'allsettings' => $allsettings]);
         
