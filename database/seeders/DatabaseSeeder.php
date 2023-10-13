@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(LanguageTableSeeder::class);
+       /* $this->call(LanguageTableSeeder::class);
         $this->call(UserTableSeeder::class);
         $this->call(RolesTableSeeder::class);
         $this->call(SliderTableSeeder::class);
@@ -46,6 +46,6 @@ class DatabaseSeeder extends Seeder
         $this->call(MenusTableSeeder::class);
         $this->call(SeoSettingsTableSeeder::class);
         $this->call(SpecialOfferTableSeeder::class);
-        $this->call(BannerSeeder::class);
+        $this->call(BannerSeeder::class);*/
     }
 }
