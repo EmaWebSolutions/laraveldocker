@@ -25,7 +25,7 @@ class HomeController extends Controller
 
     public  function index()
     {
-        echo
+        
          
             if (!Session::has('currency')) {
                 Session::put('currency', Setting::where('slug', 'default_currency')->first()->value ?? 'USD');
