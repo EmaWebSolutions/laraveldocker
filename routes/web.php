@@ -22,6 +22,12 @@ use App\Http\Controllers\Frontend\PaymentController;
 use App\Http\Controllers\Frontend\PageController;
 use App\Http\Controllers\SslCommerzPaymentController;
 
+
+Route::get('/hello', function () {
+    return 'Hello, World!';
+});
+
+
 //Route::redirect('/', '');
 Route::post('currency-price', [CartController::class, 'currencyPrice'])->name('currency_price');
 Route::get('currency-symbol', [CartController::class, 'currencySymbol'])->name('currency_symbol');
